@@ -3,7 +3,6 @@ Version control software similar to Git. Programmed in python with default libra
 
 
 ## Commands:
-* init - Sets up the folders (run first time per project)
 * commit - Saves a version
 * checkout <version> [options] - Overrides the working directory with <version>
   *  **Checkout Options:**
