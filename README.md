@@ -1,5 +1,5 @@
 # MyVersionControl
-Version control software similar to Git. Programmed in python with default libraries.
+Version control software similar to Git. Programmed in python with default libraries. Tested on Windows only
 
 
 ## Commands:
