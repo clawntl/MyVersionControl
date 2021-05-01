@@ -3,8 +3,10 @@ from math import ceil
 
 """
 TODO:
-.gitignore
+ignore files
 folders
+optimised update? (i.e. only copy part that has changed)
+log commits and checkouts
 
 """
 
