@@ -241,14 +241,15 @@ def main():
         config.read("config.ini")
     directory = config["Settings"]["directory"]
     
+    #Initialise if needed
+    if not os.path.isdir(rel_path(".versions")):
+        init()
+    
     #Command line interface
     while True:
         cmd = input(">").split()
-        
-        if cmd[0] == "init":
-            print(init())
-            
-        elif cmd[0] == "commit":
+ 
+        if cmd[0] == "commit":
             print(commit())
             
         elif cmd[0] == "checkout":
@@ -266,7 +267,6 @@ def main():
         elif cmd[0] == "help":
             data = [
                 ["\nCommands:"],
-                ["init","Sets up the folders (run first time per project)"],
                 ["commit", "Saves a version"],
                 ["checkout <version> [options]", "Overrides the working directory with <version>"],
                 ["restore", "Undoes previous checkout"],
